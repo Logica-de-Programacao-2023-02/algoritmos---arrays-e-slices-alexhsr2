@@ -12,8 +12,8 @@ func main() {
 
 	for i := 0; i < len(slice); i++ {
 		if slice[i] == x {
-			novoslice = append(slice[:i], slice[i+1:]...)
+			slice = append(slice[:i], slice[i+1:]...)
 		}
 	}
-	fmt.Println(novoslice)
+	fmt.Println(slice)
 }
